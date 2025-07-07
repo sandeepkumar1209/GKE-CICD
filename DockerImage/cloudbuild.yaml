@@ -13,5 +13,6 @@ steps:
       - 'push'
       - 'africa-south1-docker.pkg.dev/devsecops-3-tier-463414/myapps-repository/myapp1:$SHORT_SHA'
 
-
+options:
+  logging: CLOUD_LOGGING_ONLY
 
