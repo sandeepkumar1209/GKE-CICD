@@ -5,7 +5,7 @@ steps:
       - 'build'
       - '-t'
       - 'us-central1-docker.pkg.dev/devsecops-3-tier-463414/myapps-repository/myapp1:$SHORT_SHA'
-      - '.'
+      - 'DockerImage/'
 
   - name: 'gcr.io/cloud-builders/docker'
     id: Push
