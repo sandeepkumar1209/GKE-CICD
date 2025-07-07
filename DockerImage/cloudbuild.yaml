@@ -1,0 +1,17 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id; Build
+    args:
+      - 'build'
+      - '-t'
+      - 'africa-south1-docker.pkg.dev/devsecops-3-tier-463414/myapps-repository/myapp1:$SHORT_SHA'
+      - '.'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push
+    args:
+      - 'push'
+      - 'africa-south1-docker.pkg.dev/devsecops-3-tier-463414/myapps-repository/myapp1:$SHORT_SHA'
+
+
+
